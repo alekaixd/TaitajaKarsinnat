@@ -6,6 +6,7 @@ public class PlayerMovementCurves : MonoBehaviour
 {
     private float horizontal;
     private float speed;
+    public float movementSpeed = 1;
     public float jumpingPower = 10f;
     private bool isFacingRight = true;
     public Rigidbody2D rb2d;
@@ -96,7 +97,7 @@ public class PlayerMovementCurves : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb2d.velocity = new Vector2(horizontal * speed, rb2d.velocity.y);
+        rb2d.velocity = new Vector2(horizontal * speed * movementSpeed, rb2d.velocity.y);
     }
 
     private bool IsGrounded()

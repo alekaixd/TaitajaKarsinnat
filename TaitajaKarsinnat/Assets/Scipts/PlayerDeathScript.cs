@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDeathScript : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class PlayerDeathScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Death"))
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //Destroy(gameObject);
         }
     }
 }

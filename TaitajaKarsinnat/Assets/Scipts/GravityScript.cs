@@ -16,7 +16,6 @@ public class GravityScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(rb.velocity.y);
         if (gameObject.transform.position.y < 0)
         {
             rb.gravityScale = -1;

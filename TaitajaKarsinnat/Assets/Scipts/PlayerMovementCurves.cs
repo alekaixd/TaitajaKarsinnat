@@ -23,6 +23,8 @@ public class PlayerMovementCurves : MonoBehaviour
     private float jumpBufferCounter;
 
 
+ 
+
     void Update()
     {
         if (gameObject.transform.position.y > 0)
@@ -69,6 +71,7 @@ public class PlayerMovementCurves : MonoBehaviour
 
         if (Input.GetButtonUp("Jump") && rb2d.velocity.y < 0f && jumpDirection == -1)
         {
+            AudioManager.instance.musicSource.Stop();
             rb2d.velocity = new Vector2(rb2d.velocity.x, rb2d.velocity.y * 0.5f);
             coyoteTimeCounter = 0f;
         }

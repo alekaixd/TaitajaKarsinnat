@@ -21,6 +21,7 @@ public class SceneLoader : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //AudioManager.instance.PlayMusic("GameLoop");
     }
 
     public void QuitGame()

@@ -286,7 +286,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.831
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -414,7 +414,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.41
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -849,11 +849,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSounds:
-  - name: Main
-    clip: {fileID: 8300000, guid: 1f41fe024ffa00a4999ee70b682faf35, type: 3}
   - name: GameLoop
     clip: {fileID: 8300000, guid: bd773bc14ee3ef045ba28ec1a3c0faf5, type: 3}
-  sfxSounds: []
+  sfxSounds:
+  - name: Jump
+    clip: {fileID: 8300000, guid: 4b0c7b2a2f6b7d4449116734ef06dc58, type: 3}
+  - name: Gravity
+    clip: {fileID: 8300000, guid: 660758839f031da429984d4e6651c6a9, type: 3}
   musicSource: {fileID: 244631375}
   sfxSource: {fileID: 156106302}
 --- !u!4 &1081254908
@@ -921,7 +923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

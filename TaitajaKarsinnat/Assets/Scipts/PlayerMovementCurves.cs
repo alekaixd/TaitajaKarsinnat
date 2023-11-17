@@ -57,6 +57,7 @@ public class PlayerMovementCurves : MonoBehaviour
         if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpDirection * jumpingPower);
+            AudioManager.instance.PlaySFX("Jump");
             jumpBufferCounter = 0f;
         }
 
@@ -71,7 +72,6 @@ public class PlayerMovementCurves : MonoBehaviour
 
         if (Input.GetButtonUp("Jump") && rb2d.velocity.y < 0f && jumpDirection == -1)
         {
-            AudioManager.instance.musicSource.Stop();
             rb2d.velocity = new Vector2(rb2d.velocity.x, rb2d.velocity.y * 0.5f);
             coyoteTimeCounter = 0f;
         }

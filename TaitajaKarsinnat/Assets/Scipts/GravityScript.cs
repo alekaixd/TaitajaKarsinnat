@@ -53,5 +53,6 @@ public class GravityScript : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.y *= -1f;
         transform.localScale = localScale;
+        AudioManager.instance.PlaySFX("Gravity");
     }
 }

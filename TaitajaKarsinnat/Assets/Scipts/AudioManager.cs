@@ -45,7 +45,7 @@ public class AudioManager : MonoBehaviour
     }
     private void Start() //mMin theme starts playing when you open the game
     {
-        PlayMusic("Main");
+        PlayMusic("GameLoop");
     }
 
     public void PlaySFX(string name) //searches the music from SFXSounds and plays it when called with SFXSoundEffect name

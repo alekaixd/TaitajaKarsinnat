@@ -10,18 +10,15 @@ public class WorldChanger : MonoBehaviour
     public GameObject rightMap;
     public GameObject leftMap;
     public bool moveRightMap;
-    public float speed = 0.1f;
-
-    public void Start()
-    {
-    }
-    private void Update()
-    {
-    }
+    public bool win;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && moveRightMap)
+        if (win)
+        {
+
+        }
+        else if (collision.CompareTag("Player") && moveRightMap)
         {
             rightMap.transform.position = new Vector2(rightMap.transform.position.x, rightMap.transform.position.y + 10.7f);
             gameObject.SetActive(false);

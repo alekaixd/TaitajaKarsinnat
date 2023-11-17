@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AhonenScene.unity
     guid: b6e45d109ba54ea4c81d8d8e69863134
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: ab11a4ff803c28c4791c9dee4bafba3b
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729

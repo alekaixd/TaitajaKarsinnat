@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
-using static UnityEngine.GraphicsBuffer;
+using UnityEngine.SceneManagement;
+
 
 
 public class WorldChanger : MonoBehaviour
@@ -16,7 +16,7 @@ public class WorldChanger : MonoBehaviour
     {
         if (win)
         {
-            //endscreen
+            SceneManager.LoadScene(2);
         }
         else if (collision.CompareTag("Player") && moveRightMap)
         {

@@ -16,7 +16,7 @@ public class WorldChanger : MonoBehaviour
     {
         if (win)
         {
-
+            //endscreen
         }
         else if (collision.CompareTag("Player") && moveRightMap)
         {

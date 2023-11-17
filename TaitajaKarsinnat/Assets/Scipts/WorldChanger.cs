@@ -20,7 +20,7 @@ public class WorldChanger : MonoBehaviour
             target.x = target.x * -1;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        /*if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             if(target.y == 0)
             {
@@ -29,8 +29,8 @@ public class WorldChanger : MonoBehaviour
             else
             {
                 target.y = 0;
-            }
-        }
+            }*/
+        //}
 
 
         transform.position = Vector2.MoveTowards(transform.position, target, speed);
